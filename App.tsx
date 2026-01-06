@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Clipboard, 
   Copy, 
@@ -14,16 +14,16 @@ import {
   ExternalLink,
   AlertCircle
 } from 'lucide-react';
-import Header from './components/Header';
-import TextStats from './components/TextStats';
-import { TextStats as ITextStats, TransformationType } from './types';
+import Header from './components/Header.tsx';
+import TextStats from './components/TextStats.tsx';
+import { TextStats as ITextStats, TransformationType } from './types.ts';
 import { 
   toSentenceCase, 
   toTitleCase, 
   toAlternatingCase, 
   toInverseCase, 
   cleanExtraSpaces 
-} from './utils/textTransforms';
+} from './utils/textTransforms.ts';
 
 const App: React.FC = () => {
   const [text, setText] = useState('');

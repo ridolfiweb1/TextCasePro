@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TextStats as ITextStats } from '../types';
+import { TextStats as ITextStats } from '../types.ts';
 
 interface Props {
   stats: ITextStats;
